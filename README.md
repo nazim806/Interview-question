@@ -28,4 +28,15 @@
 
 #10 Getters and Setters
 
-#11 
+#11 This keyword
+
+#12 Closure
+
+#13 Hoisting
+
+#14 Function expression and function declaration
+
+#15 Higher order function
+
+#16 Strict Mode
+
