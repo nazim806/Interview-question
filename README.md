@@ -9,26 +9,30 @@
 #2 **Model view control (MVC)**
 
 
-#3 Constructor function
+#3 **Constructor function**
 
 
 #4 **Prototype, prototypical inheritance**
 There is a super object in JavaScript that all objects will inherit from it. ‘__proto__’ is an internal property of an object which points to the Prototype. A prototype contains a constructor which lets the object be capable of creating the instances from it. __proto__ will always exist in objects and hierarchically point to the prototype it belongs to until null, which is called the prototype chain.
+
+
 "Favor composition over Inheritance".
 
-#5 Recursion: calling a function without recalling an iteration.
+#5 **Recursion**
 
-#5 Async/Await
+calling a function without recalling an iteration.
 
-#6 Callback function
+#5 **Async/Await**
 
-#7 Single page application (SPA)
+#6 **Callback function**
 
-#8 Dot notation and Bracket notation
+#7 **Single page application (SPA)**
 
-#9 Local storage, session storage, cookies
+#8 **Dot notation and Bracket notation**
 
-#10 Getters and Setters
+#9 **Local storage, session storage, cookies**
+
+#10 **Getters and Setters**
 
 #11 **"This" keyword**
 
