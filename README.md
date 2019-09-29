@@ -60,3 +60,23 @@ Although JS is a single thread programming language with one call stack, it can 
 #18 **Event delegation**
 
 Event delegation is  a technique to let the event listeners on parents element also affect children element. Usually, event propagation( capturing and bubbling) allows us to implement event delegation. 
+
+#19 **Higher-order function**
+A function that accepts and /or returns another function is called higher-order function.
+
+
+#20 **Function expression and function declaration**
+
+The declaration will be defined during the parsing time, and expression will be defined at run time.
+
+Function Expression is better than function declaration which is just a floating function 
+and can be referred anywhere in the code. So, it’s wise to use function expression with a variable
+
+e.g.,
+
+let a=1;
+let b=2;
+let add = function(a,b){
+ return a+b;
+}
+
