@@ -12,13 +12,13 @@
 #3 Constructor function
 
 
-#4 Prototype, inheritance
+#4 Prototype, prototypical inheritance
 
 #5 Recursion: calling a function without recalling an iteration.
 
 #5 Async/Await
 
-#6 Callback
+#6 Callback function
 
 #7 Single page application (SPA)
 
@@ -39,4 +39,6 @@
 #15 Higher order function
 
 #16 Strict Mode
+
+#17 
 
