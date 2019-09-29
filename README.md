@@ -25,10 +25,15 @@ Abstraction: In OOP details and complexity of properties and methods are hidden,
  
 
 
-#2 **Model view control (MVC)**
+#2 **Model view controller (MVC)**
+
+
+Model–View–Controller (usually known as MVC) is a software architectural pattern[1] commonly used for developing user interfaces which divides the related program logic into three interconnected elements.
 
 
 #3 **Constructor function**
+
+"In JavaScript, any function can return a new object. When it’s not a constructor function or class, it’s called a factory function."
 
 
 #4 **Prototype, prototypical inheritance**
