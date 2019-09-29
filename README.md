@@ -14,6 +14,7 @@
 
 #4 **Prototype, prototypical inheritance**
 There is a super object in JavaScript that all objects will inherit from it. ‘__proto__’ is an internal property of an object which points to the Prototype. A prototype contains a constructor which lets the object be capable of creating the instances from it. __proto__ will always exist in objects and hierarchically point to the prototype it belongs to until null, which is called the prototype chain.
+"Favor composition over Inheritance".
 
 #5 Recursion: calling a function without recalling an iteration.
 
@@ -111,25 +112,31 @@ DOM is an acronym for the document object model. DOM creates a visual representa
 #24 **Data Structure**
 
 At a high level there are three types of data structures:
+
+
    i) Arrays/lists : Stacks, Queues are like array that differ only in how items are inserted and removed. Stacks and queues are the simplest and can be constructed from linked lists.
+   
    
    ii) Structures with nodes: Linked lists, Trees and Graphs are structures with nodes that keep references to other nodes. Trees and graphs are the most complex data structures because they extend the concept of a linked list.
    
    iii) Hash Tables: Hash tables depend on hash functions to save and locate data.
+
+
+"Bad programmers worry about the code. Good programmers worry about data structures and their relationships." - Linus Torvalds
    
-# 25 ** Stacks and Queues**
+#25 **Stacks and Queues**
 
 
-# 26 Linked lists
+#26 **Linked lists**
 
 
-# 27 Tree data structure
+#27 **Tree data structure**
 
 
-# 28 Graph data structure
+#28 **Graph data structure**
 
 
-# 29 **Hash Table
+#29 **Hash Table**
 
 
    
@@ -139,11 +146,17 @@ At a high level there are three types of data structures:
 
 
 
-# 31 **Big-O notation**
+#31 **Big-O notation**
 
 
 
 
 
 # **Coercion** 
+
+Type coercion is the process of converting value from one type to another (such as string to number, object to boolean, and so on).
+Type coercion can be explicit and implicit.
+
+When a developer expresses the intention to convert between types by writing the appropriate code, like Number(value), it’s called explicit type coercion (or type casting).  Values can also be converted between different types automatically, and it is called implicit type coercion. It usually happens when you apply operators to values of different types, like
+1 == null
 
