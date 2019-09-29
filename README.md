@@ -28,11 +28,24 @@
 
 #10 Getters and Setters
 
-#11 This keyword
+#11 **"This" keyword**
 
-#12 Closure
+In javascript "this" should represent the object where ‘this’ keyword currently located. But ‘this’ keyword is determined by how the function will be called. ‘this’ refers to the caller. If the caller cannot be found, ‘this’ will point to windows object.
 
-#13 Hoisting
+#12 **Closure**
+
+The closure in JS is about creating a closed lexical scope inside another scope, so the inner scope can access the outer scope. The closure is created as the function is created. The closure is to make variables and methods private in the scope.
+
+#13 **Hoisting**
+
+Hoisting is the JS default behavior which means moving all declarations to the top of the current scope and let variables can be used before the declaration. Initialization won’t be hoisted. Hoisting is only for declaration.
+
+The example below will hoist x, y at the top
+
+var x = 1
+console.log(x + “ — -”+y) // 1 — -undefined
+var y = 2
+
 
 #14 Function expression and function declaration
 
@@ -40,5 +53,10 @@
 
 #16 Strict Mode
 
-#17 
+#17 **Asynchronous function**
 
+Although JS is a single thread programming language with one call stack, it can also deal with some asynchronous functions using a mechanism called **event loop**. Knowing how JavaScript works from the fundamental level is the essential section to understand how the JS handles async.
+
+#18 **Event delegation**
+
+Event delegation is  a technique to let the event listeners on parents element also affect children element. Usually, event propagation( capturing and bubbling) allows us to implement event delegation. 
