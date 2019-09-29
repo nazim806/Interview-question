@@ -37,6 +37,8 @@ Model–View–Controller (usually known as MVC) is a software architectural pat
 
 
 #4 **Prototype, prototypical inheritance**
+
+
 There is a super object in JavaScript that all objects will inherit from it. ‘__proto__’ is an internal property of an object which points to the Prototype. A prototype contains a constructor which lets the object be capable of creating the instances from it. __proto__ will always exist in objects and hierarchically point to the prototype it belongs to until null, which is called the prototype chain.
 
 
@@ -44,21 +46,37 @@ There is a super object in JavaScript that all objects will inherit from it. ‘
 
 #5 **Recursion**
 
+
+
 calling a function without recalling an iteration.
 
 #5 **Async/Await**
 
+
+
 #6 **Callback function**
+
+
 
 #7 **Single page application (SPA)**
 
+
+
 #8 **Dot notation and Bracket notation**
+
+
 
 #9 **Local storage, session storage, cookies**
 
+
+
 #10 **Getters and Setters**
 
+
+
+
 #11 **"This" keyword**
+
 
 In javascript "this" should represent the object where ‘this’ keyword currently located. But ‘this’ keyword is determined by how the function will be called. ‘this’ refers to the caller. If the caller cannot be found, ‘this’ will point to windows object.
 
@@ -79,6 +97,8 @@ var y = 2
 
 #14 **Function expression and function declaration**
 
+
+
 The declaration will be defined during the parsing time, and expression will be defined at run time.
 
 Function Expression is better than function declaration which is just a floating function 
@@ -95,9 +115,11 @@ let add = function(a,b){
 
 #15 **Higher order function**
 
+
 A function that accepts and /or returns another function is called higher-order function.
 
 #16 **Strict Mode**
+
 
 JavaScript's strict mode, introduced in ECMAScript 5, is a way to opt in to a restricted variant of JavaScript, thereby implicitly opting-out of "sloppy mode". Strict mode isn't just a subset: it intentionally has different semantics from normal code. Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don't rely on strict mode without feature-testing for support for the relevant aspects of strict mode. Strict mode code and non-strict mode code can coexist, so scripts can opt into strict mode incrementally.
 
@@ -109,11 +131,13 @@ Prohibits some syntax likely to be defined in future versions of ECMAScript.
 
 #17 **Asynchronous function**
 
+
 Although JS is a single thread programming language with one call stack, it can also deal with some asynchronous functions using a mechanism called **event loop**. Knowing how JavaScript works from the fundamental level is the essential section to understand how the JS handles async.
 
 In JS setTimout is an async method, which takes in a callback function as a parameter. The second parameter is the time, after which the callback is triggered.
 
 #18 **Event delegation**
+
 
 Event delegation is  a technique to let the event listeners on parents element also affect children element. Usually, event propagation( capturing and bubbling) allows us to implement event delegation. 
 
@@ -127,7 +151,10 @@ Event delegation is  a technique to let the event listeners on parents element a
 
 #21 **Truthy and Falsy**
 
+
+
 #22 **Event loop**
+
 
 The event loop is basically an endless loop, which keeps on checking whether there is something to be executed in the call stack. If the call stack is empty it checks the Event Queue, whether there is something to move to the call stack. If there is a method present, it moves it to the call stack and the method gets executed. 
 
@@ -135,9 +162,13 @@ In short,  the event loop is a process that runs endlessly and whose only job is
 
 #23 **Document Object Model (DOM)**
 
+
+
 DOM is an acronym for the document object model. DOM creates a visual representation of our HTML code. Meaning, what we see projected on our web pages is not our hard-coded HTML but a representation of it.
 
 #24 **Data Structure**
+
+
 
 At a high level there are three types of data structures:
 
@@ -153,6 +184,8 @@ At a high level there are three types of data structures:
 "Bad programmers worry about the code. Good programmers worry about data structures and their relationships." - Linus Torvalds
    
 #25 **Stacks and Queues**
+
+
 
 
 #26 **Linked lists**
@@ -194,14 +227,21 @@ When a developer expresses the intention to convert between types by writing the
 
 #34 **The Super keyword**
 
+
+
 #35 **Mixins**
 
 
 #36 **Static methods**
 
+
+
 #37 **Polymorphism**
 
+
+
 #38 **Transpiler (Bablejs)**
+
 
 #38 **Bundler (Webpack)**
 
