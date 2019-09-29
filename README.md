@@ -4,7 +4,9 @@
 
 
 #1 **Object oriented programming (OOP)**
-
+ 
+ 
+ Object oriented programming is a programming style or paradigm centered around objects rather than functions. OOP is not a programming language or a tool. There are many object oriented programming language such as C#, Java, Ruby, Python, Javascript. There are four core concepts of object oriented programming: i) Encapsulation ii) Abstraction iii) Inheritance and iv) Polymorphism
 
 #2 **Model view control (MVC)**
 
@@ -156,11 +158,30 @@ At a high level there are three types of data structures:
 
 
 
-# **Coercion** 
+#32 **Coercion** 
 
 Type coercion is the process of converting value from one type to another (such as string to number, object to boolean, and so on).
 Type coercion can be explicit and implicit.
 
 When a developer expresses the intention to convert between types by writing the appropriate code, like Number(value), it’s called explicit type coercion (or type casting).  Values can also be converted between different types automatically, and it is called implicit type coercion. It usually happens when you apply operators to values of different types, like
 1 == null
+
+#33 **Javascript Classes**
+
+
+
+#34 **The Super keyword**
+
+#35 **Mixins**
+
+
+#36 **Static methods**
+
+#37 **Polymorphism**
+
+#38 **Transpiler (Bablejs)**
+
+#38 **Bundler (Webpack)**
+
+
 
