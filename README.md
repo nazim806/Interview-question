@@ -64,6 +64,19 @@ calling a function without recalling an iteration.
 
 #8 **Dot notation and Bracket notation**
 
+let data = {
+    name: "Name",
+    age: 10
+}
+
+// Bracket notation
+console.log(data["name"]);
+console.log(data["age"]);
+
+// Dot notation
+console.log(data.name);
+console.log(data.age);
+
 
 
 #9 **Local storage, session storage, cookies**
@@ -208,7 +221,6 @@ At a high level there are three types of data structures:
 
 
 #31 **Big-O notation**
-
 
 
 
