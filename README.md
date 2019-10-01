@@ -28,7 +28,7 @@ Abstraction: In OOP details and complexity of properties and methods are hidden,
 #2 **Model view controller (MVC)**
 
 
-Model–View–Controller (usually known as MVC) is a software architectural pattern[1] commonly used for developing user interfaces which divides the related program logic into three interconnected elements.
+Model–View–Controller (usually known as MVC) is a software architectural pattern, commonly used for developing user interfaces which divides the related program logic into three interconnected elements.
 
 
 #3 **Constructor function**
@@ -51,8 +51,23 @@ There is a super object in JavaScript that all objects will inherit from it. ‘
 calling a function without recalling an iteration.
 
 #5 **Async/Await**
+  The async function declaration defines an asynchronous function, which returns an AsyncFunction object. An asynchronous function is a function which operates asynchronously via the event loop, using an implicit Promise to return its result.
+  
+  An async function can contain an await expression that pauses the execution of the async function and waits for the passed Promise's resolution, and then resumes the async function's execution and evaluates as the resolved value.
+The await keyword is only valid inside async functions. Outside of an async function's body, you will get a SyntaxError. For example,
 
+async function f() {
 
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("done!"), 1000)
+  });
+
+  let result = await promise; // wait till the promise resolves (*)
+
+  alert(result); // "done!"
+}
+
+f();
 
 #6 **Callback function**
 
@@ -63,6 +78,12 @@ calling a function without recalling an iteration.
 
 
 #8 **Dot notation and Bracket notation**
+
+When working with dot notation, property identifies can only be alphanumeric (and _ and $). Properties can’t start with a number.
+Here is 
+
+dot notation syntax: objectName.propertyName; and 
+bracket notation syntax: objectName["propertyName"];.
 
 let data = {
     name: "Name",
@@ -85,6 +106,26 @@ console.log(data.age);
 
 #10 **Getters and Setters**
 
+Getter is a function that is used to read property. Use object.defineProperty method to define getters and/or setters.
+
+function object (){
+
+    let defaultLocation = {x:0, y:0};
+
+object.defineProperty(this, 'defaultLocation', {
+    get:function(){
+        return defaultLocation;
+    },
+
+    set: function(value) {
+        if (!value.x) || !value.y)
+        throw new Error ('Invalid location.');
+
+        defaultLocation = value;
+    }
+} );
+}
+object.defaultLocation;
 
 
 
