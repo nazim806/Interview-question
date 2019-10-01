@@ -125,22 +125,42 @@ Getter is a function that is used to read property. Use object.defineProperty me
 
 function object (){
 
+
     let defaultLocation = {x:0, y:0};
+    
+    
 
 object.defineProperty(this, 'defaultLocation', {
+
+
     get:function(){
+    
+    
         return defaultLocation;
+        
     },
 
     set: function(value) {
+    
+    
         if (!value.x) || !value.y)
+        
+        
         throw new Error ('Invalid location.');
+        
 
         defaultLocation = value;
+        
+        
     }
-} );
+    
+    
+});
+
 }
-object.defaultLocation;
+
+
+object.defaultLocation value can be used for validation.
 
 
 
