@@ -56,7 +56,7 @@ calling a function without recalling an iteration.
   An async function can contain an await expression that pauses the execution of the async function and waits for the passed Promise's resolution, and then resumes the async function's execution and evaluates as the resolved value.
 The await keyword is only valid inside async functions. Outside of an async function's body, you will get a SyntaxError. For example,
 
-async function f() {
+** async function f() {
 
   let promise = new Promise((resolve, reject) => {
     setTimeout(() => resolve("done!"), 1000)
@@ -67,7 +67,7 @@ async function f() {
   alert(result); // "done!"
 }
 
-f();
+f(); **
 
 #6 **Callback function**
 
