@@ -254,7 +254,17 @@ In JS setTimout is an async method, which takes in a callback function as a para
 
 Event delegation is  a technique to let the event listeners on parents element also affect children element. Usually, event propagation( capturing and bubbling) allows us to implement event delegation. 
 
-#19 **Const Var Let**
+#19 **Function and Block scope (Const Var Let)**
+
+var is function scope.
+let and const are block scope.
+Function scope is within the function.
+Block scope is within curly brackets.
+
+Var can be reassigned and updated. var variables are ‘function scope.’  It means they are only available inside the function they’re created in, or if not created inside a function, they are ‘globally scoped.’
+If var is defined inside a function and you try to call it outside the function, it won’t work.
+
+Benefits of using let and const: Rather than being scoped to the function they are scoped to the block.
 
 
 
