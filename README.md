@@ -366,8 +366,5 @@ When a developer expresses the intention to convert between types by writing the
 
 
 
-Link syntax: [Duck Duck Go](https://duckduckgo.com).
-
-image:  ![Tux, the Linux mascot](/assets/images/tux.png)
 
 
