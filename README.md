@@ -53,30 +53,22 @@ Recursion is a group of nested function calls. With nested functions, the most i
 ```js
 function factorial(x) {
 
-
   // TERMINATION
-  
   
   if (x < 0) return;
   
-  
   // BASE
-  
   
   if (x === 0) return 1;
   
   
   // RECURSION
   
-  
   return x * factorial(x - 1);
-  
   
 }
 
-
 factorial(3);
-
 
 // 6 ```
 
