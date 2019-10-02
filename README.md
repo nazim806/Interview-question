@@ -46,9 +46,22 @@ There is a super object in JavaScript that all objects will inherit from it. ‘
 
 #5 **Recursion**
 
+Recursion is simply when a function calls itself. All recursive functions should have three key features: a termination condition, a base case and the recursion. 
+
+Recursion is a group of nested function calls. With nested functions, the most inner nested function will return first.
+
+`function factorial(x) {
+  // TERMINATION
+  if (x < 0) return;
+  // BASE
+  if (x === 0) return 1;
+  // RECURSION
+  return x * factorial(x - 1);
+}
+factorial(3);
+// 6 `
 
 
-calling a function without recalling an iteration.
 
 #5 **Async/Await**
   The async function declaration defines an asynchronous function, which returns an AsyncFunction object. An asynchronous function is a function which operates asynchronously via the event loop, using an implicit Promise to return its result.
@@ -333,5 +346,8 @@ When a developer expresses the intention to convert between types by writing the
 
 #38 **Bundler (Webpack)**
 
+
+
+Link syntax: [Duck Duck Go](https://duckduckgo.com).
 
 
