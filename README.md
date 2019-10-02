@@ -50,7 +50,8 @@ Recursion is simply when a function calls itself. All recursive functions should
 
 Recursion is a group of nested function calls. With nested functions, the most inner nested function will return first.
 
-```function factorial(x) {
+```js
+function factorial(x) {
 
 
   // TERMINATION
