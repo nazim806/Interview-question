@@ -80,33 +80,24 @@ factorial(3);
   An async function can contain an await expression that pauses the execution of the async function and waits for the passed Promise's resolution, and then resumes the async function's execution and evaluates as the resolved value.
 The await keyword is only valid inside async functions. Outside of an async function's body, you will get a SyntaxError. For example,
 
-** async function f() {
-
-
+```js
+async function f() {
 
   let promise = new Promise((resolve, reject) => {
   
   
     setTimeout(() => resolve("done!"), 1000)
     
-    
   });
-
 
   let result = await promise; // wait till the promise resolves
   
-  
-
   alert(result); // "done!"
-  
   
 }
 
-
-
 f(); 
-
-**
+```
 
 #6 **Callback function**
 
@@ -124,6 +115,7 @@ Here is
 dot notation syntax: objectName.propertyName; and 
 bracket notation syntax: objectName["propertyName"];.
 
+```js
 let data = {
     name: "Name",
     age: 10
@@ -136,7 +128,7 @@ console.log(data["age"]);
 // Dot notation
 console.log(data.name);
 console.log(data.age);
-
+```
 
 
 #9 **Local storage, session storage, cookies**
@@ -147,43 +139,36 @@ console.log(data.age);
 
 Getter is a function that is used to read property. Use object.defineProperty method to define getters and/or setters.
 
+```js
 function object (){
-
 
     let defaultLocation = {x:0, y:0};
     
     
-
 object.defineProperty(this, 'defaultLocation', {
 
 
     get:function(){
-    
-    
+     
         return defaultLocation;
         
     },
 
     set: function(value) {
     
-    
         if (!value.x) || !value.y)
-        
-        
+            
         throw new Error ('Invalid location.');
-        
-
+       
         defaultLocation = value;
-        
-        
+                
     }
-    
-    
+        
 });
 
 }
 
-
+```
 object.defaultLocation value can be used for validation.
 
 
