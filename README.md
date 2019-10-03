@@ -105,6 +105,30 @@ f();
 
 #6 **Callback function**
 
+A callback is a function that is to be executed after another function has finished executing. In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions. Functions that do this are called higher-order functions. Any function that is passed as an argument is called a callback function.
+
+ Callbacks are a way to make sure certain code doesn’t execute until other code has already finished execution.
+ 
+ ```js
+ 
+ function first(){
+  // Simulate a code delay
+  setTimeout( function(){
+    console.log(1);
+  }, 500 );
+}
+function second(){
+  console.log(2);
+}
+first();
+second();
+
+// 2
+// 1
+
+```
+
+In this example even though we invoked the first() function first, we logged out the result of that function after the second() function.
 
 
 #7 **Single page application (SPA)**
