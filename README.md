@@ -291,10 +291,56 @@ Benefits of using let and const: Rather than being scoped to the function they a
 
 #20 **Local vs Global scope**
 
+In JavaScript there are two types of scope:
+Local scope
+Global scope
+JavaScript has function scope: Each function creates a new scope. 
+Scope determines the accessibility (visibility) of these variables.
+Variables defined inside a function are not accessible (visible) from outside the function.
 
+Local JavaScript Variables
+Variables declared within a JavaScript function, become LOCAL to the function.
+Local variables have Function scope: They can only be accessed from within the function.
+
+Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+Local variables are created when a function starts, and deleted when the function is completed.
+
+Global JavaScript Variables
+A variable declared outside a function, becomes GLOBAL.
+A global variable has global scope: All scripts and functions on a web page can access it. 
 
 #21 **Truthy and Falsy**
 
+Each value in Javascript has an inherent boolean value, generally known as either truthy or falsy. Some of the rules are a little bizarre so understanding the concepts and effect on comparison helps when debugging JavaScript applications.
+
+
+The following values are always falsy:
+
+false
+
+0 (zero)
+
+'' or "" (empty string)
+
+null
+
+undefined
+
+NaN
+
+
+Everything else is truthy. That includes:
+
+
+'0' (a string containing a single zero)
+
+'false' (a string containing the text “false”)
+
+[] (an empty array)
+
+{} (an empty object)
+
+function(){} (an “empty” function)
 
 
 #22 **Event loop**
