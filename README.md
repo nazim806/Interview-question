@@ -149,7 +149,39 @@ console.log(data.age);
 
 #9 **Local storage, session storage, cookies**
 
+Web applications can store data locally within the user's browser.
+HTML web storage provides two objects for storing data on the client:
 
+window.localStorage - stores data with no expiration date
+window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)
+
+The localStorage Object:
+
+The localStorage object stores the data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year.
+```js
+// Store
+localStorage.setItem("lastname", "Smith");
+// Retrieve
+localStorage.getItem("lastname");
+//Remove
+localStorage.removeItem("lastname");
+```
+
+The sessionStorage Object:
+
+The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab.
+
+
+
+Cookies:
+
+The expiration time for each cookie can be set.
+The 4K limit is for the entire cookie, including name, value, expiry date etc. To support most browsers, keep the name under 4000 bytes, and the overall cookie size under 4093 bytes.
+The data is sent back to the server for every HTTP request (HTML, images, JavaScript, CSS, etc) - increasing the amount of traffic between client and server.
+
+Cookies are used for authentication purposes and persistence of user data, all cookies valid for a page are sent from the browser to the server for every request to the same domain - this includes the original page request, any subsequent Ajax requests, all images, style-sheets, scripts and fonts.
+
+In terms of capabilities, cookies only allow you to store strings. sessionStorage and localStorage allow you to store JavaScript primitives but not Objects or Arrays. Session storage will generally allow you to store any primitives or objects supported by your Server Side language/framework.
 
 #10 **Getters and Setters**
 
