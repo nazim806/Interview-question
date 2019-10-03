@@ -20,7 +20,7 @@ Abstraction: In OOP details and complexity of properties and methods are hidden,
  
  Inheritance: Inheritance is a mechanism to eliminate redundant code.
  
- Polymorphism: Polymorphism means many forms. It helps us refactor ugly 'if and else' or 'switch and case' statements.
+ Polymorphism: Polymorphism means many forms. It provides a way to perform a single action in different forms. It provides an ability to call the same method on different JavaScript objects and helps us refactor ugly 'if and else' or 'switch and case' statements. 
  
  
 
