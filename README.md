@@ -70,7 +70,9 @@ function factorial(x) {
 
 factorial(3);
 
-// 6 ```
+// 6 
+
+```
 
 
 
@@ -81,6 +83,7 @@ factorial(3);
 The await keyword is only valid inside async functions. Outside of an async function's body, you will get a SyntaxError. For example,
 
 ```js
+
 async function f() {
 
   let promise = new Promise((resolve, reject) => {
