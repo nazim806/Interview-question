@@ -97,6 +97,7 @@ async function f() {
 }
 
 f(); 
+
 ```
 
 #6 **Callback function**
@@ -187,11 +188,11 @@ The closure in JS is about creating a closed lexical scope inside another scope,
 Hoisting is the JS default behavior which means moving all declarations to the top of the current scope and let variables can be used before the declaration. Initialization won’t be hoisted. Hoisting is only for declaration not for function expression.
 
 The example below will hoist x, y at the top
-
+```js
 var x = 1
 console.log(x + “ — -”+y) // 1 — -undefined
 var y = 2
-
+```
 
 #14 **Function expression and function declaration**
 
@@ -203,14 +204,14 @@ Function Expression is better than function declaration which is just a floating
 and can be referred anywhere in the code. So, it’s wise to use function expression with a variable
 
 e.g.,
-
+```js
 let a=1;
 let b=2;
 let add = function(a,b){
  return a+b;
 }
  
-
+```
 #15 **Higher order function**
 
 
