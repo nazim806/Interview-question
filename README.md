@@ -54,22 +54,15 @@ Recursion is a group of nested function calls. With nested functions, the most i
 function factorial(x) {
 
   // TERMINATION
-  
   if (x < 0) return;
   
   // BASE
-  
   if (x === 0) return 1;
-  
-  
+   
   // RECURSION
-  
-  return x * factorial(x - 1);
-  
+   return x * factorial(x - 1);  
 }
-
 factorial(3);
-
 // 6 
 
 ```
@@ -85,20 +78,13 @@ The await keyword is only valid inside async functions. Outside of an async func
 ```js
 
 async function f() {
-
   let promise = new Promise((resolve, reject) => {
-  
-  
-    setTimeout(() => resolve("done!"), 1000)
-    
+    setTimeout(() => resolve("done!"), 1000)    
   });
 
   let result = await promise; // wait till the promise resolves
-  
-  alert(result); // "done!"
-  
+  alert(result); // "done!"  
 }
-
 f(); 
 
 ```
@@ -170,30 +156,18 @@ Getter is a function that is used to read property. Use object.defineProperty me
 ```js
 function object (){
 
-    let defaultLocation = {x:0, y:0};
-    
-    
+    let defaultLocation = {x:0, y:0}; 
 object.defineProperty(this, 'defaultLocation', {
-
-
-    get:function(){
-     
-        return defaultLocation;
-        
+    get:function(){   
+        return defaultLocation;      
     },
 
     set: function(value) {
-    
         if (!value.x) || !value.y)
-            
-        throw new Error ('Invalid location.');
-       
-        defaultLocation = value;
-                
-    }
-        
+            throw new Error ('Invalid location.');
+          defaultLocation = value;            
+    }        
 });
-
 }
 
 ```
