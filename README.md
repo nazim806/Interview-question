@@ -393,9 +393,18 @@ Linked lists are useful on both the client and server. On the client, state mana
 
 #27 **Tree data structure**
 
+A Tree is like a linked list, except it keeps references to many child nodes in a hierarchical structure. Each node can have no more than one parent. The Document Object Model (DOM) is such a structure, with a root html node that branches into the head and body nodes, which further subdivide into all the familiar html tags. React's virtual DOM is also a tree structure.
+
+In the Binary Search Tree each node can have no more than two children. The left child must have a value that is smaller than or equal to its parent, while the right child must have a greater value. Structured and balanced this way, we can search for any value in logarithmic time because we can ignore one-half of the branching with each iteration.
+
+Traversal through the tree can happen in a vertical or horizontal procedure. In **Depth-First Traversal** (DFT) in the vertical direction a recursive algorithm is more elegant than an iterative one. Nodes can be traversed in pre-order, in-order, or post-order. If we need to explore the roots before inspecting the leaves, we should choose pre-order. But, if we need to explore the leaves before the roots, we should choose post-order. As its names implies, in-order enables us to traverse the nodes in sequential order. The property makes Binary Search Trees optimal for sorting.
+
+In **Breadth-First Traversal** (BFT) in the horizontal direction, an iterative approach is more elegant than a recursive one. This requires the use of a queue to track all the children nodes with each iteration. However, the memory needed for such a queue might not be trivial. If the shape of a tree is wider than deep, BFT is a better choice than DFT. Also, the path that BFT takes between any two nodes is the shortest one possible.
+
 
 #28 **Graph data structure**
 
+If  a tree is free to have more than one parent, it becomes a Graph. 
 
 #29 **Hash Table**
 
