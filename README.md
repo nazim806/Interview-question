@@ -315,7 +315,7 @@ Each value in Javascript has an inherent boolean value, generally known as eithe
 
 
 The following values are always falsy:
-
+```js
 false
 
 0 (zero)
@@ -327,11 +327,11 @@ null
 undefined
 
 NaN
-
+```
 
 Everything else is truthy. That includes:
 
-
+```js
 '0' (a string containing a single zero)
 
 'false' (a string containing the text “false”)
@@ -341,6 +341,8 @@ Everything else is truthy. That includes:
 {} (an empty object)
 
 function(){} (an “empty” function)
+
+```
 
 
 #22 **Event loop**
@@ -371,15 +373,23 @@ At a high level there are three types of data structures:
    iii) Hash Tables: Hash tables depend on hash functions to save and locate data.
 
 
-"Bad programmers worry about the code. Good programmers worry about data structures and their relationships." - Linus Torvalds
+>"Bad programmers worry about the code. Good programmers worry about data structures and their relationships." - Linus Torvalds
    
 #25 **Stacks and Queues**
 
+Stack is just an array with two principled operations: push and pop. Push add elements to the top of the array, while pop removes them from the same location. Stack follows the *"Last In, First Out"* protocol (**LIFO**). Most important stack in JS is the call stack where we push in the scope of a function whenever we execute it.
+
+Queues are arrays with two primary operations: unshift and pop. Unshift enqueues items to the end of the array, while Pop dequeues them from the beginning of the array. In other words, Queues follow the *"First In, First Out"* protocol (**FIFO**).If the direction is reversed, we can replace unshift and pop with push and shift, respectively.
 
 
 
 #26 **Linked lists**
 
+Like arrays, linked lists store data elements in sequential order. Instead of keeping indexes, linked lists hold pointers to other elements. The first node is called the head while the last node is called the tail. In a singly-linked list, a pointer to the previous node is also kept. 
+
+Like arrays, linked lists can operate as stacks. Head is the only place for insertion and removal. In a doubly-linked list linked lists can also operate as queues, where insertion occurs at the tail and removal occurs at the head, or vice-versa.
+
+Linked lists are useful on both the client and server. On the client, state management libraries like Redux structure its middleware logic in a linked-list fashoin. On the server, web frameworks like Express also structure its middleware logic in a similar fashion.
 
 #27 **Tree data structure**
 
