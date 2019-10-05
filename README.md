@@ -501,19 +501,69 @@ b.sound();
 
 Mix-ins are templates for classes. A mixin is a class containing methods that can be used by other classes without a need to inherit from it.
 
+>Mixin is a way properties are added to objects without using inheritance — Darren Jones
+
+>Mixins are a form of object composition, where component features get mixed into a composite object so that properties of each mixin become properties of the composite object. — Eric Elliot
+
+Mixin example:
+```js
+// mixin
+
+function mixin (target, ...sources{
+  object.assign (target, ...sources);
+  }
+const mydetails = {}
+const  firstname = { firstname: "Nazim" }
+const surname = { surname: "Uddin" }
+const occupation = { occupation: "Software Developer" }
+const nationality = { nationality: "American" }
+console.log(mydetails)
+mixin(mydetails,surname, firstname, occupation, nationality);
+console.log(mydetails)
+```js
+
+Object.assign(mixin) provides the basis in JavaScript for mixin properties between objects(objects without classes).
+
+It takes as first argument the target object and then accepts all the objects to mixed with the target object as a rest ... argument.
+
 #36 **Static methods**
 
+Static methods, like many other features introduced in ES6, are meant to provide class-specific methods for object-oriented programming in Javascript.To declare a static method, simply prefix a method declaration with the word static inside the class declaration.
+
+>“Static methods are called without instantiating their class and are also not callable when the class is instantiated. Static methods are often used to create utility functions for an application.” 
+
+In other words, static methods have no access to data stored in specific objects.
+
+```js
+class Foo(){
+   static methodName(){
+      console.log("bar")
+   }
+}```
+
+Since these methods operate on the class instead of instances of the class, they are called on the class. There are two ways to call static methods:
+```js
+Foo.methodName() 
+// calling it explicitly on the Class name
+// this would give you the actual static value. 
+this.constructor.methodName() 
+// calling it on the constructor property of the class
+// this might change since it refers to the class of the current instance, where the static property could be overridden
+
+```
 
 
 #37 **Polymorphism**
 
+Polymorphism is one of the tenets of Object Oriented Programming (OOP). It is the practice of designing objects to share behaviors and to be able to override shared behaviors with specific ones. Polymorphism takes advantage of inheritance in order to make this happen.
 
+#38 **Transpiler (Babel)**
 
-#38 **Transpiler (Bablejs)**
-
+Transpiler is the combination of two words translator and compiler. It converts modern Javascript code to ES5 that all browsers can understand. Babel is an example of a very popular transpiler.
 
 #38 **Bundler (Webpack)**
 
+Bundler combines all javascript files in a browser into a single file. Bundler minify javascript codes and get rid of all the white spaces, comments and uglify the codes. It also shorten the name of identifiers such as functions, objects thereby reduces the size of the file and deliver to client. There are many bundler, Webapck is one of the popular bundler. 
 
 
 
