@@ -508,7 +508,6 @@ Mix-ins are templates for classes. A mixin is a class containing methods that ca
 Mixin example:
 ```js
 // mixin
-
 function mixin (target, ...sources{
   object.assign (target, ...sources);
   }
@@ -520,7 +519,7 @@ const nationality = { nationality: "American" }
 console.log(mydetails)
 mixin(mydetails,surname, firstname, occupation, nationality);
 console.log(mydetails)
-```js
+```
 
 Object.assign(mixin) provides the basis in JavaScript for mixin properties between objects(objects without classes).
 
