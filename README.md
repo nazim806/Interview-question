@@ -434,14 +434,72 @@ When a developer expresses the intention to convert between types by writing the
 
 #33 **Javascript Classes**
 
+Javascript Classes are very similar to functions. Much like functions which have both function expressions and function declarations, classes have two components: class expressions and class declarations. Classes do not introduce a new inheritance model to JavaScript.
+They’re often described as syntactical sugar over JavaScript’s existing structure of prototypical inheritance. One important difference between function declarations and class declarations is that function declarations are hoisted and class declarations are not. 
 
+Class declaration:
+
+```js
+class Image {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+```
+
+A class expression is the other way to define a class. Class expressions can be named or unnamed. 
+```js
+// An unnamed class expression
+let Image = class {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+console.log(Image.name);
+// output: "Image"
+// A named class expression
+let MyImage = class Image {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+console.log(MyImage.name);
+// output: "Image"
+```
 
 #34 **The Super keyword**
 
+The super keyword is used to call corresponding methods of super class. This is one advantage over prototype-based inheritance.For example,
+
+```js
+class Volkswagen { 
+  constructor(name) {
+    this.name = name;
+  }
+  
+  sound() {
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+class Beetle extends Volkswagen {
+  sound() {
+    super.sound();
+    console.log(`${this.name} toots it's horn.`);
+  }
+}
+let b = new Beetle('Herbie');
+b.sound(); 
+// Herbie makes a sound.
+// Herbie toots it's horn.
+```
 
 
 #35 **Mixins**
 
+Mix-ins are templates for classes. A mixin is a class containing methods that can be used by other classes without a need to inherit from it.
 
 #36 **Static methods**
 
