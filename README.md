@@ -548,7 +548,8 @@ class Foo(){
    static methodName(){
       console.log("bar")
    }
-}```
+}
+```
 
 Since these methods operate on the class instead of instances of the class, they are called on the class. There are two ways to call static methods:
 ```js
