@@ -404,21 +404,24 @@ In **Breadth-First Traversal** (BFT) in the horizontal direction, an iterative a
 
 #28 **Graph data structure**
 
-If  a tree is free to have more than one parent, it becomes a Graph. 
+If  a tree is free to have more than one parent, it becomes a Graph. Edges that connect nodes together in a graph can be directed or undirected, weighted or unweighted. Edges that have both direction and weight are analogous to vectors.
+
+Multiplr inheritances in the form of Mixins and data objects that have many-to-many relationships produce graph structures. A social network and the internet itself are also graphs. The most complicated graph in nature is our human brain,which neural networks attempt to replicate to give machines superintelligence.
+
 
 #29 **Hash Table**
 
-
+A Hash table is a dictionary-like structure that pairs keys to values. The location in memory of each pair is determined by a hash function, which accepts a key and returns the address where the pair should be inserted and retrieved.
    
-
 
 #30 **Algorithm**
 
+An algorithm is like a function that transforms  certain input data structure into a certain output data structure. The logic inside decides the transformation.The inputs and outputs should clearly be defined as unit tests.
 
 
 #31 **Big-O notation**
 
-
+Big O notation is used to classify algorithms according to how their running time or space requirements grow as the input size grows. Big O notation is useful when analyzing algorithms for efficiency. For example, the time (or the number of steps) it takes to complete a problem of size n might be found to be T(n) = 4n2 − 2n + 2. As n grows large, the n2 term will come to dominate, so that all other terms can be neglected—for instance when n = 500, the term 4n2 is 1000 times as large as the 2n term. Ignoring the latter would have negligible effect on the expression's value for most purposes. 
 
 
 #32 **Coercion** 
