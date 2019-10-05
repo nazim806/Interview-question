@@ -69,7 +69,7 @@ factorial(3);
 
 
 
-#5 **Async/Await**
+#6 **Async/Await**
   The async function declaration defines an asynchronous function, which returns an AsyncFunction object. An asynchronous function is a function which operates asynchronously via the event loop, using an implicit Promise to return its result.
   
   An async function can contain an await expression that pauses the execution of the async function and waits for the passed Promise's resolution, and then resumes the async function's execution and evaluates as the resolved value.
@@ -89,7 +89,7 @@ f();
 
 ```
 
-#6 **Callback function**
+#7 **Callback function**
 
 A callback is a function that is to be executed after another function has finished executing. In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions. Functions that do this are called higher-order functions. Any function that is passed as an argument is called a callback function.
 
@@ -117,13 +117,13 @@ second();
 In this example even though we invoked the first() function first, we logged out the result of that function after the second() function.
 
 
-#7 **Single page application (SPA)**
+#8 **Single page application (SPA)**
 
 A single-page application (SPA) is a web application or web site that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server. This approach avoids interruption of the user experience between successive pages, making the application behave more like a desktop application. In a SPA, either all necessary code – HTML, JavaScript, and CSS – is retrieved with a single page load, or the appropriate resources are dynamically loaded and added to the page as necessary, usually in response to user actions. The page does not reload at any point in the process, nor does control transfer to another page, although the location hash or the HTML5 History API can be used to provide the perception and navigability of separate logical pages in the application. Interaction with the single page application often involves dynamic communication with the web server behind the scenes.
 
 An SPA is fully loaded in the initial page load and then page regions are replaced or updated with new page fragments loaded from the server on demand. To avoid excessive downloading of unused features, an SPA will often progressively download more features as they become required, either small fragments of the page, or complete screen modules. 
 
-#8 **Dot notation and Bracket notation**
+#9 **Dot notation and Bracket notation**
 
 When working with dot notation, property identifies can only be alphanumeric (and _ and $). Properties can’t start with a number.
 Here is 
@@ -147,7 +147,7 @@ console.log(data.age);
 ```
 
 
-#9 **Local storage, session storage, cookies**
+#10 **Local storage, session storage, cookies**
 
 Web applications can store data locally within the user's browser.
 HTML web storage provides two objects for storing data on the client:
@@ -183,7 +183,7 @@ Cookies are used for authentication purposes and persistence of user data, all c
 
 In terms of capabilities, cookies only allow you to store strings. sessionStorage and localStorage allow you to store JavaScript primitives but not Objects or Arrays. Session storage will generally allow you to store any primitives or objects supported by your Server Side language/framework.
 
-#10 **Getters and Setters**
+#11 **Getters and Setters**
 
 Getter is a function that is used to read property. Use object.defineProperty method to define getters and/or setters.
 
@@ -209,16 +209,16 @@ object.defaultLocation value can be used for validation.
 
 
 
-#11 **"This" keyword**
+#12 **"This" keyword**
 
 
 In javascript "this" should represent the object where ‘this’ keyword currently located. But ‘this’ keyword is determined by how the function will be called. ‘this’ refers to the caller. If the caller cannot be found, ‘this’ will point to windows object.
 
-#12 **Closure**
+#13 **Closure**
 
 The closure in JS is about creating a closed lexical scope inside another scope, so the inner scope can access the outer scope. The closure is created as the function is created. The closure is to make variables and methods private in the scope.
 
-#13 **Hoisting**
+#14 **Hoisting**
 
 Hoisting is the JS default behavior which means moving all declarations to the top of the current scope and let variables can be used before the declaration. Initialization won’t be hoisted. Hoisting is only for declaration not for function expression.
 
@@ -229,7 +229,7 @@ console.log(x + “ — -”+y) // 1 — -undefined
 var y = 2
 ```
 
-#14 **Function expression and function declaration**
+#15 **Function expression and function declaration**
 
 
 
@@ -247,12 +247,12 @@ let add = function(a,b){
 }
  
 ```
-#15 **Higher order function**
+#16 **Higher order function**
 
 
 A function that accepts and /or returns another function is called higher-order function.
 
-#16 **Strict Mode**
+#17 **Strict Mode**
 
 
 JavaScript's strict mode, introduced in ECMAScript 5, is a way to opt in to a restricted variant of JavaScript, thereby implicitly opting-out of "sloppy mode". Strict mode isn't just a subset: it intentionally has different semantics from normal code. Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don't rely on strict mode without feature-testing for support for the relevant aspects of strict mode. Strict mode code and non-strict mode code can coexist, so scripts can opt into strict mode incrementally.
@@ -263,19 +263,19 @@ Eliminates some JavaScript silent errors by changing them to throw errors.
 Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode.
 Prohibits some syntax likely to be defined in future versions of ECMAScript.
 
-#17 **Asynchronous function**
+#18 **Asynchronous function**
 
 
 Although JS is a single thread programming language with one call stack, it can also deal with some asynchronous functions using a mechanism called **event loop**. Knowing how JavaScript works from the fundamental level is the essential section to understand how the JS handles async.
 
 In JS setTimout is an async method, which takes in a callback function as a parameter. The second parameter is the time, after which the callback is triggered.
 
-#18 **Event delegation**
+#19 **Event delegation**
 
 
 Event delegation is  a technique to let the event listeners on parents element also affect children element. Usually, event propagation( capturing and bubbling) allows us to implement event delegation. 
 
-#19 **Function and Block scope (Const Var Let)**
+#20 **Function and Block scope (Const Var Let)**
 
 var is function scope.
 let and const are block scope.
@@ -289,7 +289,7 @@ Benefits of using let and const: Rather than being scoped to the function they a
 
 
 
-#20 **Local vs Global scope**
+#21 **Local vs Global scope**
 
 In JavaScript there are two types of scope:
 Local scope
@@ -309,7 +309,7 @@ Global JavaScript Variables
 A variable declared outside a function, becomes GLOBAL.
 A global variable has global scope: All scripts and functions on a web page can access it. 
 
-#21 **Truthy and Falsy**
+#22 **Truthy and Falsy**
 
 Each value in Javascript has an inherent boolean value, generally known as either truthy or falsy. Some of the rules are a little bizarre so understanding the concepts and effect on comparison helps when debugging JavaScript applications.
 
@@ -345,20 +345,20 @@ function(){} (an “empty” function)
 ```
 
 
-#22 **Event loop**
+#23 **Event loop**
 
 
 The event loop is basically an endless loop, which keeps on checking whether there is something to be executed in the call stack. If the call stack is empty it checks the Event Queue, whether there is something to move to the call stack. If there is a method present, it moves it to the call stack and the method gets executed. 
 
 In short,  the event loop is a process that runs endlessly and whose only job is to monitor and transfer methods to the call stack from the event queue.
 
-#23 **Document Object Model (DOM)**
+#24 **Document Object Model (DOM)**
 
 
 
 DOM is an acronym for the document object model. DOM creates a visual representation of our HTML code. Meaning, what we see projected on our web pages is not our hard-coded HTML but a representation of it.
 
-#24 **Data Structure**
+#25 **Data Structure**
 
 
 
@@ -375,7 +375,7 @@ At a high level there are three types of data structures:
 
 >"Bad programmers worry about the code. Good programmers worry about data structures and their relationships." - Linus Torvalds
    
-#25 **Stacks and Queues**
+#26 **Stacks and Queues**
 
 Stack is just an array with two principled operations: push and pop. Push add elements to the top of the array, while pop removes them from the same location. Stack follows the *"Last In, First Out"* protocol (**LIFO**). Most important stack in JS is the call stack where we push in the scope of a function whenever we execute it.
 
@@ -383,7 +383,7 @@ Queues are arrays with two primary operations: unshift and pop. Unshift enqueues
 
 
 
-#26 **Linked lists**
+#27 **Linked lists**
 
 Like arrays, linked lists store data elements in sequential order. Instead of keeping indexes, linked lists hold pointers to other elements. The first node is called the head while the last node is called the tail. In a singly-linked list, a pointer to the previous node is also kept. 
 
@@ -391,7 +391,7 @@ Like arrays, linked lists can operate as stacks. Head is the only place for inse
 
 Linked lists are useful on both the client and server. On the client, state management libraries like Redux structure its middleware logic in a linked-list fashoin. On the server, web frameworks like Express also structure its middleware logic in a similar fashion.
 
-#27 **Tree data structure**
+#28 **Tree data structure**
 
 A Tree is like a linked list, except it keeps references to many child nodes in a hierarchical structure. Each node can have no more than one parent. The Document Object Model (DOM) is such a structure, with a root html node that branches into the head and body nodes, which further subdivide into all the familiar html tags. React's virtual DOM is also a tree structure.
 
@@ -402,29 +402,39 @@ Traversal through the tree can happen in a vertical or horizontal procedure. In 
 In **Breadth-First Traversal** (BFT) in the horizontal direction, an iterative approach is more elegant than a recursive one. This requires the use of a queue to track all the children nodes with each iteration. However, the memory needed for such a queue might not be trivial. If the shape of a tree is wider than deep, BFT is a better choice than DFT. Also, the path that BFT takes between any two nodes is the shortest one possible.
 
 
-#28 **Graph data structure**
+#29 **Graph data structure**
 
 If  a tree is free to have more than one parent, it becomes a Graph. Edges that connect nodes together in a graph can be directed or undirected, weighted or unweighted. Edges that have both direction and weight are analogous to vectors.
 
 Multiplr inheritances in the form of Mixins and data objects that have many-to-many relationships produce graph structures. A social network and the internet itself are also graphs. The most complicated graph in nature is our human brain,which neural networks attempt to replicate to give machines superintelligence.
 
 
-#29 **Hash Table**
+#30 **Hash Table**
 
 A Hash table is a dictionary-like structure that pairs keys to values. The location in memory of each pair is determined by a hash function, which accepts a key and returns the address where the pair should be inserted and retrieved.
    
 
-#30 **Algorithm**
+#31 **Algorithm**
 
 An algorithm is like a function that transforms  certain input data structure into a certain output data structure. The logic inside decides the transformation.The inputs and outputs should clearly be defined as unit tests.
 
+>“Algorithms: a common language for nature, human, and computer. ”  —  Avi Wigderson
 
-#31 **Big-O notation**
+>“Algorithms + Data Structures = Programs. ”    — Niklaus Wirth
+
+>“An algorithm must be seen to be believed. ”    —  Donald Knuth
+
+>“ For me, great algorithms are the poetry of computation. Just like     verse, they can be terse, allusive, dense, and even mysterious.   But once unlocked, they cast a brilliant new light on some   aspect of computing.  ”    — Francis Sullivan
+
+
+
+
+#32 **Big-O notation**
 
 Big O notation is used to classify algorithms according to how their running time or space requirements grow as the input size grows. Big O notation is useful when analyzing algorithms for efficiency. For example, the time (or the number of steps) it takes to complete a problem of size n might be found to be T(n) = 4n2 − 2n + 2. As n grows large, the n2 term will come to dominate, so that all other terms can be neglected—for instance when n = 500, the term 4n2 is 1000 times as large as the 2n term. Ignoring the latter would have negligible effect on the expression's value for most purposes. 
 
 
-#32 **Coercion** 
+#33 **Coercion** 
 
 Type coercion is the process of converting value from one type to another (such as string to number, object to boolean, and so on).
 Type coercion can be explicit and implicit.
@@ -432,7 +442,7 @@ Type coercion can be explicit and implicit.
 When a developer expresses the intention to convert between types by writing the appropriate code, like Number(value), it’s called explicit type coercion (or type casting).  Values can also be converted between different types automatically, and it is called implicit type coercion. It usually happens when you apply operators to values of different types, like
 1 == null
 
-#33 **Javascript Classes**
+#34 **Javascript Classes**
 
 Javascript Classes are very similar to functions. Much like functions which have both function expressions and function declarations, classes have two components: class expressions and class declarations. Classes do not introduce a new inheritance model to JavaScript.
 They’re often described as syntactical sugar over JavaScript’s existing structure of prototypical inheritance. One important difference between function declarations and class declarations is that function declarations are hoisted and class declarations are not. 
@@ -470,7 +480,7 @@ console.log(MyImage.name);
 // output: "Image"
 ```
 
-#34 **The Super keyword**
+#35 **The Super keyword**
 
 The super keyword is used to call corresponding methods of super class. This is one advantage over prototype-based inheritance.For example,
 
@@ -497,7 +507,7 @@ b.sound();
 ```
 
 
-#35 **Mixins**
+#36 **Mixins**
 
 Mix-ins are templates for classes. A mixin is a class containing methods that can be used by other classes without a need to inherit from it.
 
@@ -525,7 +535,7 @@ Object.assign(mixin) provides the basis in JavaScript for mixin properties betwe
 
 It takes as first argument the target object and then accepts all the objects to mixed with the target object as a rest ... argument.
 
-#36 **Static methods**
+#37 **Static methods**
 
 Static methods, like many other features introduced in ES6, are meant to provide class-specific methods for object-oriented programming in Javascript.To declare a static method, simply prefix a method declaration with the word static inside the class declaration.
 
@@ -552,15 +562,15 @@ this.constructor.methodName()
 ```
 
 
-#37 **Polymorphism**
+#38 **Polymorphism**
 
 Polymorphism is one of the tenets of Object Oriented Programming (OOP). It is the practice of designing objects to share behaviors and to be able to override shared behaviors with specific ones. Polymorphism takes advantage of inheritance in order to make this happen.
 
-#38 **Transpiler (Babel)**
+#39 **Transpiler (Babel)**
 
 Transpiler is the combination of two words translator and compiler. It converts modern Javascript code to ES5 that all browsers can understand. Babel is an example of a very popular transpiler.
 
-#38 **Bundler (Webpack)**
+#40 **Bundler (Webpack)**
 
 Bundler combines all javascript files in a browser into a single file. Bundler minify javascript codes and get rid of all the white spaces, comments and uglify the codes. It also shorten the name of identifiers such as functions, objects thereby reduces the size of the file and deliver to client. There are many bundler, Webapck is one of the popular bundler. 
 
