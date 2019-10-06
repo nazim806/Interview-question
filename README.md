@@ -34,6 +34,18 @@ Model–View–Controller (usually known as MVC) is a software architectural pat
 #3 **Constructor function**
 
 "In JavaScript, any function can return a new object. When it’s not a constructor function or class, it’s called a factory function."
+The way to create an "object type", is to use an object constructor function. In the example below, function Person() is an object constructor function. Objects of the same type are created by calling the constructor function with the new keyword.
+
+```js
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+var myFather = new Person("John", "Doe", 50, "blue");
+var myMother = new Person("Sally", "Rally", 48, "green");
+```
 
 
 #4 **Prototype, prototypical inheritance**
