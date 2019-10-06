@@ -587,6 +587,8 @@ Transpiler is the combination of two words translator and compiler. It converts 
 
 Bundler combines all javascript files in a browser into a single file. Bundler minify javascript codes and get rid of all the white spaces, comments and uglify the codes. It also shorten the name of identifiers such as functions, objects thereby reduces the size of the file and deliver to client. There are many bundler, Webapck is one of the popular bundler. 
 
+Webpack is a static module bundler for modern JavaScript applications. It builds a dependency graph that is responsible for bundling all your javascript modules into one regardless where they are located when one javascript file depends on each other.
+
 
 
 
