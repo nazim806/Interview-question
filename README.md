@@ -284,7 +284,6 @@ In JS setTimout is an async method, which takes in a callback function as a para
 
 #19 **Event delegation**
 
-
 Event delegation is  a technique to let the event listeners on parents element also affect children element. Usually, event propagation( capturing and bubbling) allows us to implement event delegation. 
 
 #20 **Function and Block scope (Const Var Let)**
