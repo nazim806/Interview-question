@@ -298,7 +298,7 @@ If var is defined inside a function and you try to call it outside the function,
 
 Both ‘let’ and ‘const’ are block-scoped. That means that they are scoped within a JavaScript block, essentially anywhere { between curly-braces }, including, say, loops or if statements. This is different to the ‘var’ declaration that is only function-scoped, and will not be scoped within a loop or if statement.
 
-The ‘let’ variable is able to be reassigned with no issue, ‘const’ variables can only be assigned once.
+The ‘let’ variable is able to be reassigned with no issue, ‘const’ variables can only be assigned once. Use ‘let’ declarations if your variable will be reassigned later in your code. If the variable will be ‘changed’ but that change being a mutation of the object assigned to the variable, a ‘const’ declaration would be preferred.
 
 Benefits of using let and const: Rather than being scoped to the function they are scoped to the block.
 
