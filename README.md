@@ -296,6 +296,10 @@ Block scope is within curly brackets.
 Var can be reassigned and updated. var variables are ‘function scope.’  It means they are only available inside the function they’re created in, or if not created inside a function, they are ‘globally scoped.’
 If var is defined inside a function and you try to call it outside the function, it won’t work.
 
+Both ‘let’ and ‘const’ are block-scoped. That means that they are scoped within a JavaScript block, essentially anywhere { between curly-braces }, including, say, loops or if statements. This is different to the ‘var’ declaration that is only function-scoped, and will not be scoped within a loop or if statement.
+
+The ‘let’ variable is able to be reassigned with no issue, ‘const’ variables can only be assigned once.
+
 Benefits of using let and const: Rather than being scoped to the function they are scoped to the block.
 
 
