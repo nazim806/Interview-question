@@ -5,7 +5,7 @@
 
 #1 **Object oriented programming (OOP)**
  
- Object oriented programming is a programming style or paradigm centered around objects rather than functions. OOP is not a programming language or a tool. There are many object oriented programming language such as C#, Java, Ruby, Python, Javascript. There are four core concepts of object oriented programming: i) Encapsulation ii) Abstraction iii) Inheritance and iv) Polymorphism.
+ Object oriented programming is a programming style or paradigm centered around objects rather than functions. An object is a value in memory which is possibly referenced by an identifier. An identifier is a sequence of characters in the code that identifies a variable, function, or property. OOP is not a programming language or a tool. There are many object oriented programming language such as C#, Java, Ruby, Python, Javascript. There are four core concepts of object oriented programming: i) Encapsulation ii) Abstraction iii) Inheritance and iv) Polymorphism.
  
  Encapsulation: OOP combined a gorup of related varables and functions into a unit which is called an object. The varibles are referred as properties and the functions as methods of the object. This is called encapsulation. For example, a 'car' is an object with properties like make,model, color and methods like start(),stop() and move().
  
