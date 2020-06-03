@@ -446,7 +446,19 @@ An algorithm is like a function that transforms  certain input data structure in
 
 #32 **Big-O notation**
 
-Big O notation is used to classify algorithms according to how their running time or space requirements grow as the input size grows. Big O notation is useful when analyzing algorithms for efficiency. For example, the time (or the number of steps) it takes to complete a problem of size n might be found to be T(n) = 4n2 − 2n + 2. As n grows large, the n2 term will come to dominate, so that all other terms can be neglected—for instance when n = 500, the term 4n2 is 1000 times as large as the 2n term. Ignoring the latter would have negligible effect on the expression's value for most purposes. 
+Big O notation is used to classify algorithms according to how their running time or space requirements grow as the input size grows. Big O notation is useful when analyzing algorithms for efficiency. For example, the time (or the number of steps) it takes to complete a problem of size n might be found to be T(n) = 4n2 − 2n + 2. As n grows large, the n2 term will come to dominate, so that all other terms can be neglected—for instance when n = 500, the term 4n2 is 1000 times as large as the 2n term. Ignoring the latter would have negligible effect on the expression's value for most purposes.
+
+Run-time complexity: cost of algorithm, worst case scenario.
+ 
+O(1): constant time, for a single operation in an array.
+
+O(logn): logarithmic,  Algorithms with logarithmic time are more scalable than with linear time.
+
+O(n):linear time, loop, cost of this algorithm and time to execute grows linearly.
+
+O(n^2): quadratic, double loop.
+
+O(2n): Exponential growth is opposite of logarithmic growth. It is not scalable at all. It will become very slow very soon.
 
 
 #33 **Coercion** 
